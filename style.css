@@ -1,0 +1,421 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightslategrey;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 10vh;
+}
+
+.logo img {
+    width: 4vw;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: lightslategrey;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    color: #ffffff;
+    height: 10vh;
+    padding: 0 1vw;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-section.left {
+    text-align: left;
+}
+
+.footer-section.right {
+    text-align: right;
+}
+
+.background-slider {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundChange 15s infinite;
+    filter: brightness(30%);
+    z-index: -1;
+}
+
+.text-content {
+    z-index: -1;
+    position: relative;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+.slogan {
+    font-size: 2vw;
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-image: url('background1.jpg');
+    }
+
+    33% {
+        background-image: url('background2.jpg');
+    }
+
+    66% {
+        background-image: url('background3.jpg');
+    }
+
+    100% {
+        background-image: url('background1.jpg');
+    }
+}
+
+.title {
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    margin: 1vw 0 0 0;
+    color: #333333;
+}
+
+.description-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1vw;
+}
+
+.description {
+    width: 95%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5vw;
+    border-radius: 8px;
+    background: #f8f8f8;
+    margin: 1vw;
+    color: #000000;
+    text-align: justify;
+    font-size: 1vw;
+}
+
+/*kultur*/
+.content {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+article {
+    margin-bottom: 2em;
+}
+
+article h2 {
+    color: #ff5733;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ff5733;
+    padding-bottom: 0.3em;
+}
+
+article p {
+    margin: 1em 0;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .content {
+        padding: 1em;
+    }
+
+    article h2 {
+        font-size: 1.5em;
+    }
+
+    article p {
+        font-size: 1em;
+    }
+}
+
+.profil {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 50px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.background-image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size:auto;
+    background-position: center;
+    animation: backgroundChange 15s infinite;
+    filter: brightness(30%);
+    z-index: -1;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Gaya untuk formulir kontak */
+
+.kontak {
+    height: 80vh;
+}
+
+.kontak {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.kontak-card {
+    width: 12vw;
+    margin: 1vw;
+    text-align: center;
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 1vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 30vh;
+    font-weight: bold;
+    font-size: 0.9vw;
+}
+
+.kontak-card a {
+    color: black;
+    text-decoration: none;
+}
+
+.kontak-card img {
+    width: 75%;
+    height: auto;
+    margin-bottom: 1vw;
+}
+
+/*tempat*/
+header h1 {
+    position: relative;
+    z-index: -1;
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    position: relative;
+    z-index: -1;
+    margin: 0.5em 0 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.content2 {
+    padding: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.destination {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.destination img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px 0 0 8px;
+}
+
+.destination .text {
+    padding: 1em;
+}
+
+.destination h2 {
+    color: #ff5733;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.destination p {
+    margin: 1em 0;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .content {
+        padding: 1em;
+    }
+
+    .destination {
+        flex-direction: column;
+    }
+
+    .destination img {
+        width: 100%;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .destination h2 {
+        font-size: 1.5em;
+    }
+
+    .destination p {
+        font-size: 1em;
+    }
+}
+
+/*hotel*/
+
+.hotel {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/*transaksi*/
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form select, form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/*hote*/
+
+.hotel p {
+    margin: 5px 0;
+    color: #666;
+}
+.price {
+    color: #e74c3c;
+    font-weight: bold;
+}
+.facilities, .important-info {
+    color: #2c3e50;
+    font-style: italic;
+}
+.location {
+    color: #3498db;
+}
+
+fieldset {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}

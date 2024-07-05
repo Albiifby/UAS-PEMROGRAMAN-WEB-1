@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tempat Wisata</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo left-logo">
+                <img src="./logo.webp" alt="Logo UKM B.I">
+            </div>
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="tempat_wisata.html">Destinations</a></li>
+                <li><a href="hotel.html">Hotels</a></li>
+                <li><a href="transaksi.html">Transactions</a></li>
+                <li><a href="kontak.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="logo right-logo">
+            <img src="./logo.webp" alt="Logo UKM B.I">
+        </div>
+    </header>
+    <main>
+        <div class="profil">
+            <div class="title">
+                <span> Transaction</span>
+            </div>
+            <form id="transactionForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="Bali">Bali</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                    <option value="Pulau Komodo">Pulau Komodo</option>
+                    <option value="Lombok">Lombok</option>
+                    <option value="Papua">Papua</option>
+                </select>
+                
+                <label for="date">Date of Visit:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="hotel">Hotel:</label>
+                <select id="hotel" name="hotel" required>
+                    <option value="hotelA">The Mulia Bali</option>
+                    <option value="hotelB">Raja Ampat Dive Lodge</option>
+                    <option value="hotelC">Amanjiwo Resort</option>
+                    <option value="hotelD">The Oberoi Lombok</option>
+                    <option value="hotelE">The Phoenix Hotel Yogyakarta - MGallery Collection </option>
+                    <option value="hotelF">Qunci Villas</option>
+                    <option value="hotelG">Plataran Komodo Resort & Spa</option>
+                    <option value="hotelH">AYANA Komodo Resort, Waecicu Beach </option>
+                    <option value="hotelI">W Bali - Seminyak </option>
+                </select>
+                <label for="message">Additional Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <fieldset>
+                    <legend>Bank Account Information</legend>
+                    <p>Bank Name: BCA</p>
+                    <p>Account Number: 1234567</p>
+                    <p>Account Name: Fahri Albi Febiyani</p>
+                </fieldset>
+                <label for="proof">Upload Payment Proof (PDF, Image):</label>
+                <input type="file" id="proof" name="proof">
+                
+                <button type="button" onclick="processTransaction()">Submit</button>
+            </form>
+            <div id="transactionResult"></div>
+        </div>
+    </main>
+   
+    <script>
+        function processTransaction() {
+            // Logic to handle form submission goes here
+            // Example: validate inputs, send data to server, etc.
+        }
+    </script>
+                
+                <button type="button" onclick="processTransaction()">Submit</button>
+            </form>
+            <div id="transactionResult"></div>
+        </section>
+    </main>
+   
+</body>
+</html>
